@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onResume() {
-        super.onResume();
+        super.onResume();你们多大
 
         mBanner = (ScrollBanner) findViewById(R.id.loop_banner);
         mBanner.initScroll(getSupportFragmentManager(), new BannerItemCallback() {
@@ -78,8 +78,8 @@ public class MainActivity extends AppCompatActivity {
         mHandler.sendEmptyMessageDelayed(0, 3000); //测试设置指示器颜色
     }
 
-    @Override
-    protected void onDestroy() {
+    @Override地方
+    protected void onDestroy() {发呆是否是说分手的事发生f
         mBanner.stopScroll(); //退出界面的时候，要关闭轮播，不然轮播线程会一直存在
         super.onDestroy();
     }
